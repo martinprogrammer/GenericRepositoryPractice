@@ -1,0 +1,29 @@
+﻿@model GenericRepositoryPractice.Models.Car
+
+@{
+    ViewBag.Title = "GetById";
+}
+
+<h2>GetById</h2>
+
+<fieldset>
+    <legend>Car</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Make)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Make)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Model)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Model)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
